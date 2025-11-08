@@ -2,6 +2,10 @@
 
 function filterInStockProducts(products) {
   // เริ่มเขียนโค้ดตรงนี้
+  return products.filter(callbackOperation)
+}
+function callbackOperation (filteredProducts) {
+  return filteredProducts.quantity > 0
 }
 
 // ตัวอย่างการใช้งาน
